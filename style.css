@@ -106,7 +106,7 @@ img{
 
 nav{
     background-color: var(--color-primary);
-    width: 100vw;
+    width: 100%;
     height:4.5rem;
     position: fixed;
     top:0;
@@ -274,6 +274,7 @@ width: 100%;
 .post_body
 {
     margin-top: 1rem;
+    margin-right: 3rem;
     color:var(--color-primary)
 }
 small{
@@ -434,6 +435,7 @@ nav button{
     position: relative;
 }
 .nav_items{
+    display:none;
     position: absolute;
     flex-direction: column;
     top: 100%;
@@ -516,16 +518,27 @@ nav button{
     .posts_container{
         grid-template-columns: 1fr;
     }
-    
+
+    .post_info .main_title{
+        font-size: 3rem;
+        margin-right: 1.5rem;
+        
+   
+    }
+
+    .post_info p .post_body .sub_title{
+        margin-right: 4rem;
+    }
 }
 
 .main_title{
     font-size: 4rem;
+    padding-right: 2px;
     margin-top: 3.5rem;
 }
 
 .new img{
-    height: 600px;
+    height: 500px;
 }
 
 .category_button{
